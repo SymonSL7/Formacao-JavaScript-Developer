@@ -10,7 +10,7 @@ function calcularAcrescimo(valor, porcentagem) {
     return valor + (valor * definirPorcentagem(porcentagem));
 }
 
-function precoAPagarDeAcordoComAFormadePagamento(precoEtiqueta, tipoPagamento, parcelasNoCartaoDeCredito) {
+function precoAPagarDeAcordoComAFormaDePagamento(precoEtiqueta, tipoPagamento, parcelasNoCartaoDeCredito) {
 
     if (tipoPagamento === 3) {
         if (parcelasNoCartaoDeCredito <= 2) {
@@ -40,6 +40,6 @@ function precoAPagarDeAcordoComAFormadePagamento(precoEtiqueta, tipoPagamento, p
     tipoPagamento = 3;
     //Se o pagmento for no Crédito defina a quantidade de parcelas, acima de 3x, tem juros de 10%.
     parcelasNoCartaoDeCredito = 3;
-    console.log(precoAPagarDeAcordoComAFormadePagamento(precoEtiqueta, tipoPagamento, parcelasNoCartaoDeCredito));
+    console.log(precoAPagarDeAcordoComAFormaDePagamento(precoEtiqueta, tipoPagamento, parcelasNoCartaoDeCredito));
 
 })();
